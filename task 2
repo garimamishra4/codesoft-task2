@@ -1,0 +1,126 @@
+landingpage.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" type="text/css" href="landingpage.css">
+</head>
+<body>
+   <header>
+    <nav>
+    <div class="logo">LANDING PAGE</div>
+    <div class="menu">
+        <a href="" style="color: white; background-color: rgb(55, 204, 204);">HOME</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Features</a>
+        <a href="" style="color: white; background-color: rgb(55, 204, 204);">Info</a>
+    </div></nav>
+    <div class="container">
+        <div class="left">
+        <div class="h"><h1>Welcome to
+                  My website
+        </h1></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita repellendus, a officia unde error itaque libero vero nobis repellat qui esse sint amet provident dicta, animi tempora reiciendis suscipit.</p>
+        <button>Read more</button></div>
+        <div class="right">
+            <img src="image copy.png">
+        </div>
+    </div>
+   </header> 
+</body>
+</html>
+
+landingpage.css
+
+*{
+    margin: 5px; padding: 5px;
+    bpx-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(image.png);
+    background-position: bottom;
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(55, 204, 204);
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px 0px 20px 0px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+}
+.left, .right{
+    flex-basis: 50%;
+}
+.left h1{
+    font-size: 50px;
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+.left{
+    max-width: 450px;
+}
+.left p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: rgb(55, 204, 204);
+    padding: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.right img{
+    width: 60%;
+    height: 350px;
+    border-radius: 250px 0px 250px 0px;
+}
+.right{
+    padding-left: 170px;
+}
+.h{
+    color: rgb(90, 55, 122);
+}
+@media (min-width: 480) and (max-width: 768px) {
+    nav{
+        height: 60px;
+    }
+    .container{
+        padding: 30px 20px;
+    }
+    .left h1{
+        padding: 0px;
+    }
+    .right{
+        padding-left: 40px;
+    }
+    .right img{
+        width: 90%;
+    }
+    
+}
